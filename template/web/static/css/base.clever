@@ -1,0 +1,17 @@
+.clear:
+    clear: both
+
+.hidden:
+    display: none
+
+.block:
+    display: block
+
+body:
+    font-family: Arial, "MS Trebuchet", sans-serif
+    font-size: 13px
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0

@@ -1,0 +1,6 @@
+pytest
+-e git+git://github.com/andymccurdy/redis-py.git#egg=redis
+-e git+git://github.com/mitsuhiko/jinja2.git#egg=jinja2
+-e git+git://github.com/mitsuhiko/werkzeug.git#egg=werkzeug
+-e git+git://github.com/mitsuhiko/flask.git#egg=flask
+-e git+git://github.com/tymofij/clevercss.git#egg=clevercss

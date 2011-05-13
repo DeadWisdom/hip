@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <script src="{{ url_for('.static', filename='js/app.js') }}" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+        app.setup({});
+    </script>
+{% endblock %}

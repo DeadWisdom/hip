@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="{{ url_for('.static', filename='img/favicon.png') }}" />
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('.static', filename='style.css') }}" />
+    
+    <script src="{{ url_for('.static', filename='lib/jquery.js') }}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ url_for('.static', filename='lib/jquery.cookie.js') }}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ url_for('.static', filename='lib/tea.js') }}" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+        Tea.root = "{{url_for('.static', filename='') }}";
+    </script>
+    
+    {% block head %}
+    {% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

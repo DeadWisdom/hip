@@ -1,0 +1,529 @@
+/* _base.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* assets.clever */
+.icon-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.icon-view .icon .t-button {
+  cursor: default;
+}
+
+.icon-view .icon .t-button:hover {
+  background-color: transparent;
+}
+
+.icon-view .t-selected .t-button {
+  background-color: #ace9ff !important;
+}
+
+/* base.clever */
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+body {
+  background: url('img/white_carbon.gif');
+  font-family: Arial, 'MS Trebuchet', sans-serif;
+  font-size: 13px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+body .workspace {
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+body .workspace .module {
+  position: absolute;
+  top: 42px;
+  right: 0px;
+  bottom: 0px;
+  left: -1px;
+  overflow: hidden;
+}
+
+/* dialog.clever */
+.t-dialog {
+  width: 400px;
+  z-index: 99;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 1px 1px 4px #666666;
+  -webkit-box-shadow: 1px 1px 4px #666666;
+  box-shadow: 1px 1px 4px #666666;
+}
+
+.t-dialog .t-title {
+  background: #303030;
+  padding: 5px 8px;
+  font-weight: bold;
+  color: white;
+  margin-top: -5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+.t-dialog .t-content {
+  padding: 10px;
+  background-color: white;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+.t-dialog .t-field {
+  margin: 8px;
+  clear: both;
+}
+
+.t-dialog .t-field label {
+  float: left;
+  line-height: 22px;
+  font-size: 14px;
+  margin: 0px 20px;
+  width: 70px;
+}
+
+.t-dialog .t-field input {
+  width: 240px;
+}
+
+.t-dialog .t-bottom {
+  background-color: #eeeeee !important;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+.t-dialog .t-bottom .t-button .t-text {
+  color: #333333;
+}
+
+.t-dialog .t-bottom .t-button:hover {
+  background-color: transparent;
+}
+
+.t-dialog .t-bar .t-field {
+  clear: none;
+  margin: 3px 10px;
+}
+
+.t-dialog .t-bar .t-field label {
+  display: block;
+  float: right;
+  margin: 0px 3px;
+}
+
+.t-scrim {
+  z-index: 97;
+  background-color: #666666;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* icons.clever */
+.icon-expand {
+  background-image: url("img/icons/expand.png");
+}
+
+.icon-collapse {
+  background-image: url("img/icons/collapse.png");
+}
+
+.icon-user {
+  background-image: url("img/icons/user.png");
+}
+
+.icon-logout {
+  background-image: url("img/icons/lock.png");
+}
+
+.icon-loading {
+  background-image: url("img/icons/ajax-loader.gif");
+  background-position: 2px 2px !important;
+}
+
+.icon-warning {
+  background-image: url("img/icons/warning.png");
+}
+
+.icon-project {
+  background-image: url("img/icons/film.png");
+}
+
+.icon-settings {
+  background-image: url("img/icons/cog.png");
+}
+
+.icon-assets {
+  background-image: url("img/icons/box-picture.png");
+}
+
+.icon-asset {
+  background-image: url("img/icons/page-white.png");
+}
+
+.icon-folder {
+  background-image: url("img/icons/folder.png");
+}
+
+.icon-upload {
+  background-image: url("img/icons/upload.png");
+}
+
+/* module.clever */
+.menu {
+  width: 250px !important;
+}
+
+.menu .t-tree .t-tree .t-tree {
+  padding-left: 22px;
+}
+
+.menu .t-active > .t-head .t-button {
+  background-color: #e5e5e5;
+}
+
+.menu .t-active > .t-head .t-button:hover {
+  background-color: #ace9ff;
+}
+
+.module > .t-stack {
+  position: absolute;
+  left: 250px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* panel.clever */
+.t-panel {
+  position: absolute;
+}
+
+.t-panel .t-focuser {
+  display: none;
+}
+
+.t-panel .t-close {
+  background: url("img/panel/close.png") no-repeat scroll center center transparent;
+  cursor: pointer;
+  height: 16px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 16px;
+}
+
+.workspace .t-panel {
+  background-color: white;
+  width: 300px;
+  border-left: 1px solid #505050;
+  border-right: 1px solid #202020;
+  top: 0px;
+  bottom: 0px;
+  -moz-box-shadow: 2px 2px 2px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 2px #aaaaaa;
+  box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+.workspace .t-panel .t-title {
+  padding: 5px 7px;
+  background: #303030 url('img/panel/top.png') repeat-x top;
+  color: white;
+  font-size: 12px;
+}
+
+.workspace .t-panel .t-content {
+  overflow: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 19px;
+}
+
+.workspace .t-panel .t-bar {
+  background-color: #303030;
+  height: 28px;
+}
+
+.workspace .t-panel .t-bar .t-button {
+  display: block;
+  float: left;
+  border-radius: 2px 2px 2px 2px;
+  margin: 0px 3px;
+  padding: 1px 4px 2px;
+}
+
+.workspace .t-panel .t-bar .t-button .t-icon {
+  margin-top: 2px;
+}
+
+.workspace .t-panel .t-bar .t-button .t-text {
+  margin-top: 2px;
+  color: white;
+  height: 18px;
+  line-height: 18px;
+}
+
+.workspace .t-panel .t-bar .t-button:hover {
+  background-color: #404040;
+}
+
+.workspace .t-panel .t-bar .t-button:hover .t-text {
+  color: #ace9ff;
+}
+
+.workspace .t-panel .t-bar .upload-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.workspace .t-panel .t-bar .upload-button input {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  border: 300px solid transparent;
+  height: auto;
+  -moz-transform: translate(-800px, 0) scale(10);
+  -o-transform: translate(-300px, -300px) scale(10);
+  -ms-filter: alpha(opacity=0);
+  filter: alpha(opacity=0);
+}
+
+.workspace .t-panel .t-bar .info {
+  font-size: 10px;
+  color: #dddddd;
+  line-height: 24px;
+  margin: 0px 8px;
+}
+
+.workspace .t-has-top .t-content {
+  top: 54px;
+}
+
+/* status.clever */
+#status-box {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  width: 300px;
+  z-index: 98;
+}
+
+#status-box .status {
+  background-color: #303030;
+  background-position: 8px 5px;
+  background-repeat: no-repeat;
+  padding: 8px 10px 10px 65px;
+  margin: 10px 0px;
+  color: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 1px 1px 4px #666666;
+  -webkit-box-shadow: 1px 1px 4px #666666;
+  box-shadow: 1px 1px 4px #666666;
+  font-size: 12px;
+}
+
+#status-box .status .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#status-box .status .text {
+  margin-top: 5px;
+}
+
+#status-box .alert {
+  background-image: url('img/status/alert.png');
+}
+
+#status-box .info {
+  background-image: url('img/status/info.png');
+}
+
+#status-box .confirm {
+  background-image: url('img/status/confirm.png');
+}
+
+#status-box .error {
+  background-image: url('img/status/error.png');
+}
+
+/* tea.clever */
+.t-button {
+  display: block;
+  cursor: pointer;
+}
+
+.t-button .t-icon {
+  float: left;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+}
+
+.t-button .t-text {
+  float: left;
+  margin-left: 3px;
+}
+
+.t-button:hover .t-icon {
+  background-position: 0px -20px;
+}
+
+.t-disabled .t-icon {
+  background-position: 0 -40px !important;
+}
+
+.t-content .t-button {
+  height: 30px;
+  padding: 0 4px;
+}
+
+.t-content .t-button .t-icon {
+  margin-top: 4px;
+}
+
+.t-content .t-button .t-text {
+  line-height: 28px;
+  color: black;
+}
+
+.t-content .t-button:hover {
+  background: none repeat scroll 0 0 #ace9ff;
+}
+
+.t-message {
+  font-style: italic;
+  color: #666666;
+  cursor: default;
+}
+
+/* toolbar.clever */
+#toolbar {
+  height: 40px;
+  background: #303030;
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #000000;
+  -moz-box-shadow: 2px 2px 2px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 2px #aaaaaa;
+  box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+#toolbar .t-button {
+  height: 40px;
+  float: left;
+  padding: 0 15px 0 12px;
+  background: url("img/top-pipe.png") repeat-y scroll right center transparent;
+  text-indent: -999999px;
+  width: 20px;
+}
+
+#toolbar .t-button:first-child {
+  padding-left: 10px;
+}
+
+#toolbar .t-button .t-text {
+  line-height: 36px;
+  font-size: 14px;
+  color: white;
+}
+
+#toolbar .t-button .t-icon {
+  margin-top: 9px;
+}
+
+#toolbar .expanded {
+  text-indent: 0px;
+  width: auto;
+}
+
+#toolbar .active {
+  background-color: #404040;
+}
+
+/* top.clever */
+#top {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  background: #303030;
+  border-bottom: 1px solid black;
+  -moz-box-shadow: 2px 2px 2px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 2px #aaaaaa;
+  box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+#top .logo {
+  background: url('img/logo.png') no-repeat scroll top left;
+  width: 130px;
+  height: 24px;
+}
+
+#top .t-button {
+  background: url("img/top-pipe.png") repeat-y scroll left center transparent;
+  float: right;
+  height: 24px;
+  padding: 0 5px 0 4px;
+}
+
+#top .t-button .t-icon {
+  margin-top: 2px;
+}
+
+#top .t-button .t-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+}
